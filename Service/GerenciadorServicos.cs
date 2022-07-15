@@ -41,7 +41,9 @@ namespace Service
             foreach (Usuario n in ListaUsuarios)
             {
                 Console.WriteLine(n.Nome);
+                Console.WriteLine(n.RendaAnual);
                 Console.WriteLine(n.ImpostoRenda);
+                Console.WriteLine(n.RendaAnual);
             }
         }
 

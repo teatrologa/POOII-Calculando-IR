@@ -10,6 +10,8 @@ namespace Service.Interface
     {
         public void CadastrarUsuario();
         public void BuscarUsuario();
+        public void PrintarLista();
+
 
     }
 }

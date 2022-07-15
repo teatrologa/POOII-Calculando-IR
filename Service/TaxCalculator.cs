@@ -9,8 +9,6 @@ namespace Service
 {
     public class TaxCalculator : ITaxCalculator
     {
-        
-        public double ImpostoRenda { get; set; }
 
         public double TaxCalculation(double rendaAnual)
         {
@@ -24,19 +22,19 @@ namespace Service
                 return impostoRenda;
 
             }
-            else if (rendaAnual > 22847.76 || rendaAnual <= 33919.80)
+            else if (rendaAnual > 22847.76 && rendaAnual <= 33919.80)
             {
 
                 impostoRenda = (rendaAnual * 0.075) - 1713.58;
                 return impostoRenda;
             }
-            else if (rendaAnual > 33919.80 || rendaAnual <= 45012.60)
+            else if (rendaAnual > 33919.80 && rendaAnual <= 45012.60)
             {
 
                 impostoRenda = (rendaAnual * 0.150) - 4257.57;
                 return impostoRenda;
             }
-            else if (rendaAnual > 45012.60 || rendaAnual <= 55976.16)
+            else if (rendaAnual > 45012.60 && rendaAnual <= 55976.16)
             {
 
                 impostoRenda = (rendaAnual * 0.225) - 7633.51;
@@ -51,10 +49,6 @@ namespace Service
 
         }
 
-        public double GetImpostoRenda()
-        {
-            return ImpostoRenda;
-        }
        
     }
 }

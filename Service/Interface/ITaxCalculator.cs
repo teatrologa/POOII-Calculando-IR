@@ -10,6 +10,5 @@ namespace Service.Interface
     {
         public double TaxCalculation(double rendaAnual);
 
-        public double GetImpostoRenda();
     }
 }

@@ -17,6 +17,7 @@ class Program
         var serviceProvider = services.BuildServiceProvider();
         var telaUsuario = serviceProvider.GetService<IGerenciadorServicos>();
         telaUsuario.CadastrarUsuario();
+        telaUsuario.PrintarLista();
 
 
 
