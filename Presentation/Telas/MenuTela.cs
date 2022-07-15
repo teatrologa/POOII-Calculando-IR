@@ -10,11 +10,11 @@ namespace Presentation.Telas
     {
         public const string MenuPrincipal = @"
 ------------------------------------------------
-               Calculando seu IR                 
+       Menu Principal | Calculando seu IR                 
 ------------------------------------------------
 
-1. Calcular Imposto de Renda
-2. Buscar Cadastro
+1. Calcular imposto de renda
+2. Ver tabela e fórmula do imposto
 3. Sair
 
 ";

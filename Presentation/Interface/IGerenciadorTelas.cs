@@ -5,13 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Presentation
+namespace Presentation.Interface
 {
     public interface IGerenciadorTelas
     {
         public void Menu();
+        public void MenuOpcoes();
         public void CadastarUsuario();
-
+        public void TabelaImposto();
         public void PrintarUsuario(Usuario usuario);
     }
 }
