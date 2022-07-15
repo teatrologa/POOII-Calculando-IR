@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
+using Presentation;
 
 class Program
 {
@@ -15,9 +16,10 @@ class Program
         Configuracoes(services);
 
         var serviceProvider = services.BuildServiceProvider();
-        var telaUsuario = serviceProvider.GetService<IGerenciadorServicos>();
-        telaUsuario.CadastrarUsuario();
-        telaUsuario.PrintarLista();
+        var inicioProgram = serviceProvider.GetService<IGerenciadorTelas>();
+        inicioProgram.Menu();
+        
+
 
 
 
@@ -27,6 +29,7 @@ class Program
     {
         services
             .AddScoped<IGerenciadorServicos, GerenciadorServicos>()
+            .AddScoped<IGerenciadorTelas, GerenciadorTelas>()
             .AddScoped<ITaxCalculator, TaxCalculator>();
 
     }
